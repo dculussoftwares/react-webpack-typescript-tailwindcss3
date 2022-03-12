@@ -1,7 +1,7 @@
 {
   "name": "react-webpack-typescript-starter",
   "version": "0.1.0",
-  "description": "Starter kit for React, Webpack (with Hot Module Replacement), Typescript and Babel.",
+  "description": "Starter kit for React, Webpack (with Hot Module Replacement), Typescript, Babel and Taiwind css",
   "keywords": [
     "react",
     "webpack",
@@ -16,12 +16,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vikpe/react-webpack-typescript-starter.git"
+    "url": "git+https://github.com/dculussoftwares/react-webpack-typescript-tailwindcss3.git"
   },
   "bugs": {
-    "url": "https://github.com/vikpe/react-webpack-typescript-starter/issues"
+    "url": "https://github.com/dculussoftwares/react-webpack-typescript-tailwindcss3/issues"
   },
-  "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
+  "homepage": "https://github.com/dculussoftwares/react-webpack-typescript-tailwindcss3",
   "scripts": {
     "build": "yarn run clean-dist && webpack --config=configs/webpack/prod.js",
     "clean-dist": "rimraf dist/*",
