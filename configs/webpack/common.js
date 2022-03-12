@@ -9,19 +9,46 @@ module.exports = {
   context: resolve(__dirname, "../../src"),
   module: {
     rules: [
+      // {
+      //   test: [/\.jsx?$/, /\.tsx?$/],
+      //   use: ["babel-loader"],
+      //   exclude: /node_modules/,
+      // },
+      // {
+      //   test: /\.css$/,
+      //   use: ["style-loader", "css-loader"],
+      // },
+
+
+      // {
+      //   test: /\.(scss|sass)$/,
+      //   use: ["style-loader", "css-loader", "sass-loader"],
+      // },
+
+      // {
+      //   test: [/\.jsx?$/, /\.tsx?$/],
+      //   include: path.resolve(__dirname, 'src'),
+      //   use: {
+      //     loader: 'babel-loader',
+      //     options: {
+      //       presets: ['@babel/preset-env'],
+      //     },
+      //   },
+      // },
       {
         test: [/\.jsx?$/, /\.tsx?$/],
         use: ["babel-loader"],
         exclude: /node_modules/,
       },
+
+
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.css$/i,
+        include: resolve(__dirname, "../../src"),
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
-      {
-        test: /\.(scss|sass)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
+
+
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
