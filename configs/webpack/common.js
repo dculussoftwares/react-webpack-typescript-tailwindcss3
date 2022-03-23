@@ -19,7 +19,6 @@ module.exports = {
       //   use: ["style-loader", "css-loader"],
       // },
 
-
       // {
       //   test: /\.(scss|sass)$/,
       //   use: ["style-loader", "css-loader", "sass-loader"],
@@ -36,18 +35,24 @@ module.exports = {
       //   },
       // },
       {
+        test: /\.less$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "less-loader" },
+        ],
+      },
+      {
         test: [/\.jsx?$/, /\.tsx?$/],
         use: ["babel-loader"],
         exclude: /node_modules/,
       },
 
-
       {
         test: /\.css$/i,
         include: resolve(__dirname, "../../src"),
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
-
 
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
