@@ -1,9 +1,9 @@
 module.exports = {
-  purge: ['./src/**/**.{js,jsx,ts,tsx}'],
+  purge: ["./src/**/**.{js,jsx,ts,tsx}"],
 
   content: [],
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [require("dculus-daisy-ui")],
+};
