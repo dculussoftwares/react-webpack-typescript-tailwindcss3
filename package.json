@@ -76,6 +76,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "dculus-daisy-ui": "0.0.4"
+    "dculus-daisy-ui": "0.0.7"
   }
 }

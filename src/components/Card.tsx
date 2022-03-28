@@ -1,9 +1,11 @@
 import React from "react";
 const reactLogo = require("./../assets/img/react_logo.svg");
+import { Btn } from "dculus-daisy-ui/build";
 
 const Card = () => {
   return (
     <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <Btn />
       <div className="flex justify-end px-4 pt-4">
         <button
           id="dropdownButton"
